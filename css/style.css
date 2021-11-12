@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100,300,400,500,700,900&');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #151719;
+    scroll-behavior: smooth;
+}
+hr{
+    background: #2c3e59;
+}
+span{
+    color: #5658dd;
+}
+.navbar .navbar-nav .nav-item{
+    padding-right: 3.5rem;
+}
+.navbar .navbar-nav .nav-item a{
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #95a5a6;
+}
+.navbar .navbar-nav button{
+    background: #6163FF;
+    padding: 0.1rem 1.7rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    color: #E7E8EE;
+}
+.mid h1{
+    color: #ECEDED;
+    font-weight: 900;
+}
+.mid h1 span{
+    color: #5658dd;
+}
+.mid P{
+    width: 60%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #97A4AE;
+    word-spacing: .1rem;
+}
+.mid .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mid .row button{
+    background: #6163FF;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    color: #E7E8EE;
+    margin: 0 0.6rem;
+}
+.mid .row button:nth-child(2){
+    background: #25282c;
+    color: #E7E8EE;
+}
+body > header > div > h1.text2{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #E7E8EE;
+}
+.features .row .one img{
+    background: #5658dd;
+    color: #fff;
+    border-radius: 50px;
+}
+.features .row .one h3{
+    color: #ECEDED;
+    font-weight: 700;
+}
+.features .row .one p{
+    color: #97A4AE;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.about h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #E7E8EE;
+}
+.about P{
+    color: #97A4AE;
+    font-weight: 400;
+    font-size: 1.3rem;
+    word-spacing: 0.01rem;
+}
+body > section.about.container.my-5 > div > div.content.col-lg-6.col-md-6.col-12.p-4 > h6{
+    color: #5658dd;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+}
+body > section.about.container.my-5 > div > div.content.col-lg-6.col-md-6.col-12.p-4 > h2{
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #E7E8EE;
+}
+.feedback h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #E7E8EE;
+}
+.feedback p{
+    color: #97A4AE;
+    font-weight: 400;
+    font-size: 1.3rem;
+    word-spacing: 0.01rem;
+}
+.feedback .row div i{
+    color: #6163FF;
+    font-size: 2rem;
+}
+.feedback .row div p{
+    color: #97A4AE;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.feedback .row div h4{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ECEDED;
+}
+.feedback .row div span{
+    color: #1CB58A;
+}
+.feedback .row div{
+    background: #25282C;
+    padding: 1rem 1.7rem;
+    color: #fff;
+}
+.feedback div div{
+    border-radius: 10px;
+}
+.sub{
+    background: #5658dd;
+    padding: 4rem 3.3rem;
+}
+.sub .row h2{
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #ECEDED;
+}
+.sub .row input{
+    width: 30%;
+    border-style: none;
+    outline: none;
+    padding: 0.9rem 1rem;
+    border-radius: 3px;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+#progressbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
