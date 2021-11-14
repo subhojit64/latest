@@ -32,6 +32,9 @@ span{
     border-radius: 2px;
     color: #E7E8EE;
 }
+.sign{
+    color: #E7E8EE;
+}
 .mid h1{
     color: #ECEDED;
     font-weight: 900;
@@ -90,6 +93,13 @@ body > header > div > h1.text2{
     font-weight: 900;
     font-size: 3rem;
     color: #E7E8EE;
+}
+.but{
+    color: #fff;
+    text-decoration: none !important;
+}
+.but:hover{
+    color: #5658dd;
 }
 .about P{
     color: #97A4AE;
@@ -208,4 +218,13 @@ body > section.about.container.my-5 > div > div.content.col-lg-6.col-md-6.col-12
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(30px);
+}
+.sign-1{
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+.sign{
+    color: #fff !important;
+    text-decoration: none !important;
 }
